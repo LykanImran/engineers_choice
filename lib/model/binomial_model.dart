@@ -43,52 +43,6 @@ class BinomialModel {
   void test() {
     String xp = "";
     String yp = "", ib = "";
-/*
-    while (r <= n) {
-      for (i = 1; i <= n; i++) {
-        nf = nf * i;
-      }
-      for (j = 1; j <= r; j++) {
-        rf = j * rf;
-      }
-      p = n - r;
-      for (k = 1; k <= p; k++) {
-        pf = pf * k;
-      }
-      s = (nf / (rf * pf)) * Math.pow(a, p) * Math.pow(b, r);
-      if (p != 0) {
-        if (p == 1)
-          xp = x;
-        else
-          xp = x + "^" + p;
-      }
-      else {
-        xp = "";
-      }
-      if (r != 0) {
-        if (r == 1)
-          yp = y;
-        else
-          yp = y + "^" + r;
-      } else {
-        yp = "";
-      }
-
-      int s1 = (int)s;
-      ib = s1 + "" + xp + "" + yp;
-      //-----------------------------------------------
-
-      if (r == n)
-        d.append(" " + ib);
-      else
-        d.append(" " + ib + " +");
-
-
-      r++;
-      nf = 1;
-      pf = 1;
-      rf = 1;
-    }*/
   }
 
   int factorial(int number) {
