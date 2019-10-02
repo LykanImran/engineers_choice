@@ -191,9 +191,9 @@ class _BinomialCalculatorState extends State<BinomialCalculator> {
     );
   }
 
-  Widget _termBuilder(double term, int xPower, int yPower) {
-    String sign;
-    if (term > 0) {
+  Widget _termBuilder(BigInt term, int xPower, int yPower) {
+    String sign='';
+    if (term > BigInt.from(0)) {
       sign = "+";
     } else {
       sign = "-";
@@ -203,7 +203,7 @@ class _BinomialCalculatorState extends State<BinomialCalculator> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Text(
-          '${sign} ${term.toInt()}',
+          '${sign} ${term.toInt().abs()}',
           style: TextStyle(fontSize: 25),
         ),
         xPower != 0
