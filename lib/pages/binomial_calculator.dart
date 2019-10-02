@@ -6,6 +6,7 @@ import 'package:engineers_choice/widgets/company_label.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flip_card/flip_card.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 import 'package:math_expressions/math_expressions.dart';
 
@@ -143,7 +144,7 @@ class _BinomialCalculatorState extends State<BinomialCalculator> {
               )
             ],
           ),
-          CompanyLabel(Colors.blue),
+          CompanyLabel(Colors.black87),
         ],
       ),
     );
@@ -198,9 +199,9 @@ class _BinomialCalculatorState extends State<BinomialCalculator> {
     } else {
       sign = "-";
     }
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      crossAxisAlignment: CrossAxisAlignment.start,
+    return Wrap(
+      //mainAxisSize: MainAxisSize.min,
+      //crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Text(
           '${sign} ${term.toInt().abs()}',

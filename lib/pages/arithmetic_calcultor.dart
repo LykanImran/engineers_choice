@@ -1,5 +1,6 @@
 import 'package:engineers_choice/model/arithmetic_model.dart';
 import 'package:engineers_choice/utils/style_guide.dart';
+import 'package:engineers_choice/widgets/company_label.dart';
 import 'package:flutter/material.dart';
 import 'package:custom_radio_grouped_button/custom_radio_grouped_button.dart';
 
@@ -136,7 +137,8 @@ class _ArithmeticCalculatorState extends State<ArithmeticCalculator> {
                 ),
               )
             ],
-          )
+          ),
+          CompanyLabel(Colors.black87)
         ],
       ),
     );
